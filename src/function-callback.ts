@@ -12,4 +12,4 @@ function addAndHandle(n1: number, n2: number, cb:(num: number) => void) {
   cb(result);
 }
 
-addAndHandle(4,5, (num) => {console.log(num)});
+addAndHandle(4,5, (num) => {console.log(num + " logged")});

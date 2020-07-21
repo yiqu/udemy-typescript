@@ -10,4 +10,4 @@ function addAndHandle(n1, n2, cb) {
     var result = n1 + n2;
     cb(result);
 }
-addAndHandle(4, 5, function (num) { console.log(num); });
+addAndHandle(4, 5, function (num) { console.log(num + " logged"); });
