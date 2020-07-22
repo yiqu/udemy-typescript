@@ -14,6 +14,9 @@
 
  interface ICar extends Driveable {
    passengerCount: number;
+
+   startUp(): void;
+   getPassengerCount(): number;
  }
 
  class AudiCar implements ICar, Driveable {
@@ -29,4 +32,33 @@
     this.modelNmae = modelName;
     this.passengerCount = 4;
    }
+
+   startUp() {
+     console.log("Starting up")
+   }
+
+   getPassengerCount() {
+     return this.passengerCount;
+   }
  }
+
+ /**
+  * Interface as function type
+  */
+ interface addFn {
+   (n1: number, n2: number): number
+ }
+
+ const adding: addFn = (num1, num2) => {
+   return num1 + num2;
+ }
+
+ adding(4,5);
+
+ type AddedFn = (n1: number, n2: number) => number;
+
+ let addingFunc: AddedFn = (k: number, l: number) => {
+   return k + l;
+ }
+
+ addingFunc(1,2);
