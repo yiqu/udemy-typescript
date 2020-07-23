@@ -7,7 +7,7 @@ function printRes(n1) {
     console.log(n1);
 }
 function addAndHandle(n1, n2, cb) {
-    var result = n1 + n2;
+    const result = n1 + n2;
     cb(result);
 }
-addAndHandle(4, 5, function (num) { console.log(num + " logged"); });
+addAndHandle(4, 5, (num) => { console.log(num + " logged"); });

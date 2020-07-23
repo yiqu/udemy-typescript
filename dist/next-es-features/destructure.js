@@ -2,26 +2,26 @@
 /**
  * Array and Object destructure
  */
-var aHobbyList = ["Soccer", "Basketball", "Football", "Baseball", "Hockey"];
+const aHobbyList = ["Soccer", "Basketball", "Football", "Baseball", "Hockey"];
 // to destruce this array and store the items into individual variables:
-var hob1 = aHobbyList[0], hob2 = aHobbyList[1];
+let [hob1, hob2] = aHobbyList;
 // Soccer, basketball
 //console.log(hob1, hob2)
-var hob3 = aHobbyList[0], hob4 = aHobbyList.slice(1);
+let [hob3, ...hob4] = aHobbyList;
 //console.log(hob4.length) //4
-var soccerHob = aHobbyList[0], basketballHob = aHobbyList[1];
+let [soccerHob, basketballHob] = aHobbyList;
 //Soccer Basketball
 //console.log(soccerHob, basketballHob)
 // Object destructure
-var newPersonx = {
+const newPersonx = {
     namezz: "Kevin",
     agezz: 30
 };
 // pulls out the property and assign it to the variable namezz, agezz
-var namezz = newPersonx.namezz, agezz = newPersonx.agezz;
+let { namezz, agezz } = newPersonx;
 // Kevin 30
 //console.log(namezz, agezz)
 // pull out the property and assign them to new variables
-var newNamezz = newPersonx.namezz, newAgezz = newPersonx.agezz;
+let { namezz: newNamezz, agezz: newAgezz } = newPersonx;
 // Kevin 30 . newNamezz is Kevin, newAgezz is 30
 // console.log(newNamezz, newAgezz)

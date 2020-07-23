@@ -29,10 +29,10 @@ class LoggerClass {
 const lc1 = LoggerClass.getInstance();
 lc1.logFile("Hello");
 lc1.logFile("Again");
-lc1.printLogs(); //["Hello", "Again"]
+//lc1.printLogs(); //["Hello", "Again"]
 
 const lc2 = LoggerClass.getInstance();
-lc2.printLogs(); //["Hello", "Again"]
+//lc2.printLogs(); //["Hello", "Again"]
 
 /**
  * since its a singleton, they share the same instance.

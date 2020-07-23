@@ -5,8 +5,8 @@
 /**
  * Const, let keywords
  */
-var myNameThatCantBeChanged = "Kevin";
-var myNewNameThatCanBeChanged = "Kevin";
+const myNameThatCantBeChanged = "Kevin";
+let myNewNameThatCanBeChanged = "Kevin";
 // var = only scopred into a function and global
 if (2 > 1) {
     var isOld = true;
@@ -14,6 +14,6 @@ if (2 > 1) {
 //console.log(isOld); // this works in JS, it will print out isOld
 // let is block scoped, i.e. inside if () {}, for loop, or just {}
 if (2 > 1) {
-    var isOld2 = true;
+    let isOld2 = true;
 }
 //console.log(isOld2); // this will not work

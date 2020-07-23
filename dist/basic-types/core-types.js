@@ -11,36 +11,36 @@
  * 8) Any
  */
 // string
-var nameString = "I am a string";
-var nameString2 = "I am a string"; //inference string
+const nameString = "I am a string";
+let nameString2 = "I am a string"; //inference string
 // boolean
-var actionBoolean = true;
-var actionBoolean2 = false; //inference boolean
+const actionBoolean = true;
+let actionBoolean2 = false; //inference boolean
 // number
-var num = 1;
-var num2 = 5;
+const num = 1;
+let num2 = 5;
 // objects
-var myInfo = {
+const myInfo = {
     name: "Kevin",
     age: 30
 };
-var myInfo2 = {
+let myInfo2 = {
     name: "Kevin",
     age: 30,
 };
 // array
-var stringInArray = ["Soocer", "Basketball"];
-var stringsInArray;
+const stringInArray = ["Soocer", "Basketball"];
+let stringsInArray;
 //stringsInArray = 1; // ERROR, not array
 //stringsInArray = ["Hi", 5] // ERROR, array constains different type than stated
 stringsInArray = ["Hello"];
 // mutiple type Arrays
-var multipleTypeArray;
+let multipleTypeArray;
 multipleTypeArray = ["string", 5];
-var multipleTypeArray2;
+let multipleTypeArray2;
 multipleTypeArray2 = ["string", 5, false];
 // tuple : fixed length array and fixed type. If you want to be really strict.
-var tupleArray = [3, "three",]; // fixed length, fixed type
+let tupleArray = [3, "three",]; // fixed length, fixed type
 //let tupleArray2: [number, string] = [3, "three", 5];  // ERROR
 //let tupleArray3: [number, string] = [3, "three", boolean];  // ERROR
 //enums
@@ -62,3 +62,7 @@ var Sport2;
     Sport2[Sport2["Football"] = 6] = "Football"; //6
 })(Sport2 || (Sport2 = {}));
 console.log(Sport2.Basketball); // prints out 'BASKETBALL'
+// tuple
+let ghj;
+let hhh = ["Hi"];
+ghj = hhh;
