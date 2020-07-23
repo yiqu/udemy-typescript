@@ -6,10 +6,11 @@
  */
 
  interface Driveable {
-   wheelCount: number;
+   wheelCount: [number, number];
    mpg: number;
    modelNmae: string;
    radio?: boolean;
+   someMethod(param: boolean): void;
  }
 
  interface ICar extends Driveable {
@@ -20,14 +21,14 @@
  }
 
  class AudiCar implements ICar, Driveable {
-  wheelCount: number;
+  wheelCount: [number, number];
   mpg: number;
   modelNmae: string;
   
   passengerCount: number;
 
    constructor(wc: number, mpg: number, modelName: string) {
-    this.wheelCount = wc;
+    this.wheelCount = [1,3];
     this.mpg = mpg;
     this.modelNmae = modelName;
     this.passengerCount = 4;
@@ -39,6 +40,9 @@
 
    getPassengerCount() {
      return this.passengerCount;
+   }
+
+   someMethod(c: boolean) {
    }
  }
 

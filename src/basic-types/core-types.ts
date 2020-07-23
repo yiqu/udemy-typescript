@@ -76,3 +76,9 @@ enum Sport2 {
 }
 
 console.log(Sport2.Basketball) // prints out 'BASKETBALL'
+
+
+// tuple
+let ghj: [string];
+let hhh:[string] = ["Hi"];
+ghj = hhh;
