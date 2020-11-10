@@ -21,7 +21,7 @@ let [soccerHob, basketballHob]: string[] = aHobbyList;
 // Object destructure
 
 const newPersonx = {
-  namezz: "Kevin",
+  namezz: "Kevizzdsn",
   agezz: 30
 }
 
@@ -35,3 +35,5 @@ let {namezz, agezz} = newPersonx;
 let {namezz: newNamezz, agezz: newAgezz} = newPersonx;
 // Kevin 30 . newNamezz is Kevin, newAgezz is 30
 // console.log(newNamezz, newAgezz)
+
+

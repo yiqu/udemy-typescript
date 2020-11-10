@@ -14,7 +14,7 @@ let [soccerHob, basketballHob] = aHobbyList;
 //console.log(soccerHob, basketballHob)
 // Object destructure
 const newPersonx = {
-    namezz: "Kevin",
+    namezz: "Kevizzdsn",
     agezz: 30
 };
 // pulls out the property and assign it to the variable namezz, agezz
